@@ -9,7 +9,7 @@ class Helper {
     private static let rootView = app.windows.firstMatch
 
     static func pushLogDebug(_ message: String) {
-        print("FXNeo \(message)")
+        print("AutoTest \(message)")
     }
     
     static func randomBool() -> Bool {

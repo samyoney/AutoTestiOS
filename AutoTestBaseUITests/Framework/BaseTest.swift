@@ -31,27 +31,5 @@ class BaseTest: XCTestCase {
     private func getTestRunStatus() -> Int{
         return Int(self.testRun?.failureCount ?? 0)
     }
-    
-    final func handleLoginIfNeed(_ needLoginDemo: Bool = false) {
-        HomeView {
-            $0.changeToHome()
-            let isDemoLogined = $0.isDemoLogined()
-            let isRealLogined = $0.isRealLogined()
-            let needLogin = needLoginDemo ? !isDemoLogined : !isRealLogined
-            if (needLogin) {
-                $0.goLoginIfNeed(isDemoLogined)
-                LoginView {
-                    if needLoginDemo {
-                        $0.loginDemo()
-                    } else {
-                        $0.typeAccountPassword("C15133361", "password")
-                        $0.settingLoginStatus(true, true, true, false)
-                        $0.loginReal()
-                    }
-                }
-            }
-        }
-       
-    }
 }
 
