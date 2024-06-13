@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C2C4A961-2FB7-412D-96DC-11E3E00F3A1D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "uiTestingScreenshotsLifetime" : "keepNever"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AutoTestBase.xcodeproj",
+        "identifier" : "DEDC82622C1AA385005511C2",
+        "name" : "AutoTestBaseUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
